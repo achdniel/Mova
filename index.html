@@ -1,322 +1,143 @@
 <!DOCTYPE html>
-<html lang="en" >
-  <head>
-    <meta charset="utf-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
-    <link rel="main" href="main.js">
-    <link rel="icon" href="assets/Mova site logo.png">
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="description" content="Mova – Sneaker Marketplace trusted by 100+ countries. Authentic Air Jordan, Yeezy, and New Balance sneakers, guaranteed legit.">
+  <title>Mova | Sneaker Marketplace</title>
+  <link rel="icon" type="image/png" href="assets/img/Mova site logo.png">
 
-    <!-- External CDN Files -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@500&family=Open+Sans:wght@500;700;800&display=swap" rel="stylesheet">
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+  <!-- Fonts -->
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
 
-    <title>Mova</title>
-  </head>
-  <body id="back-to-top">
-    <!-- Navbar -->
-    <nav class="navbar navbar-expand-lg p-md-3 sticky-top" style="background-color: #fff;">
-      <div class="container">
-        <a class="navbar-brand" href="index.html">
-          <img src="assets/Mova logo.png" alt="Logo" width="80" height="48" class="d-inline-block align-text-top">
-        </a>
-        <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarTogglerDemo02" aria-controls="navbarTogglerDemo02" aria-expanded="false" aria-label="Toggle navigation">
-          <span class="navbar-toggler-icon"></span>
-        </button>
-        
-        <div class="collapse navbar-collapse" id="navbarTogglerDemo02">
-          <ul class="navbar-nav nav-underline ms-auto mx-auto">
-            <li class="nav-item">
-              <a class="nav-link" aria-current="page" href="#back-to-top">Home</a>
-            </li>
-            <li class="nav-item">
-              <a class="nav-link" href="about.html">About</a>
-            </li>
-            <li class="nav-item dropdown">
-              <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
-              <ul class="dropdown-menu">
-                <li><a class="dropdown-item" href="product.html">Men</a></li>
-                <li><a class="dropdown-item" href="product.html">Women</a></li>
-                <li><a class="dropdown-item" href="product.html">Kids</a></li>
-                <li><hr class="dropdown-divider"></li>
-                <li><a class="dropdown-item" href="product.html">Accessories</a></li>
-              </ul>
-            </li>
-          </ul>
+  <!-- Bootstrap -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 
+  <!-- AOS -->
+  <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
 
-          <!-- Cart Button -->
-          <a type="button" class="btn" href="login.html" role="button">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-shopping-cart" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-              <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
-              <path d="M17 17h-11v-14h-2"></path>
-              <path d="M6 5l14 1l-1 7h-13"></path>
-            </svg>
-          </a>
+  <!-- Owl Carousel -->
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css" integrity="sha512-tS3S5qG0BlhnQROyJXvNjeEM4UpMXHrQfTGmbQ1gKmelCxlSEBUaxhRBj/EFTzpbP4RVSrpEikbmdJobCvhE3g==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css" integrity="sha512-sMXtMNL1zRzolHYKEujM2AqCLUR9F2C4/05cdbxjjLSRvMQIciEPCQZo++nk7go3BtSuK9kfa/s+a4f4i5pLkw==" crossorigin="anonymous" referrerpolicy="no-referrer"/>
 
-          <!-- Login / Sign Up Button -->
-          <a type="button" class="btn" href="login.html" role="button">
-            <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-user-circle" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-              <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-              <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
-              <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-              <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
-          </svg>
-          </a>
-        </div>
+  <!-- Site CSS -->
+  <link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body id="back-to-top">
+
+  <div data-include="assets/partials/navbar.html"></div>
+
+  <!-- Hero Section -->
+  <div class="px-4 pt-3 text-center border-bottom">
+    <h1 class="display-4 fw-bold">Mova Sneaker Marketplace</h1>
+    <div class="col-lg-6 mx-auto">
+      <p class="lead mb-4">Sneakers, Apparel, Luxury, Fashion, Collectibles. Mova Marketplace trusted by 100+ Countries — every product is guaranteed legit and authentic.</p>
+      <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
+        <a href="products.html" class="btn btn-dark btn-lg px-4 me-sm-3">Shop Now</a>
+        <a href="#special" class="btn btn-outline-dark btn-lg px-4">See Best Picks</a>
       </div>
-    </nav>
+    </div>
+    <div class="overflow-hidden">
+      <div class="container px-5">
+        <img src="assets/img/brandtag-1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Mova – Authentic sneaker marketplace banner" width="700" height="500" loading="lazy">
+      </div>
+    </div>
+  </div>
 
-      <!-- Hero Section -->
-      <div class="px-4 pt-3 text-center border-bottom">
-        <h1 class="display-4 fw-bold">Mova e-commerce</h1>
-        <div class="col-lg-6 mx-auto">
-          <p class="lead mb-4">Sneakers, Apparel, Luxury, Fashion, Collectibles. Mova Marketplace trusted by 100+ Country, we guarantee every product is legit and authentic</p>
-          <div class="d-grid gap-2 d-sm-flex justify-content-sm-center mb-5">
-            <a href="#special" type="button" class="btn btn-outline-dark btn-lg px-4 me-sm-3">See our product</a>
+  <!-- Best Picks -->
+  <section id="special">
+    <div class="container">
+      <div class="title text-center py-5">
+        <h2 class="position-relative d-inline-block" style="color: goldenrod;"><strong>Best Picks</strong></h2>
+      </div>
+      <div class="special-list row g-0" data-aos="fade-up">
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="special-img position-relative overflow-hidden">
+            <img src="assets/img/Air_Max_95-removebg-preview.png" class="w-100" alt="Nike Air Max 95 sneaker">
+            <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+              <i class="fas fa-heart"></i>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize mt-3 mb-1">Nike Air Max 95</p>
+            <span class="fw-bold d-block">Rp. 999.000</span>
+            <a href="products.html" class="btn btn-outline-dark mt-3">View More</a>
           </div>
         </div>
-        <div class="overflow-hidden" style="max-height: auto;">
-          <div class="container px-5">
-            <img src="assets/brandtag-1.jpg" class="img-fluid border rounded-3 shadow-lg mb-4" alt="Example image" width="700" height="500" loading="lazy">
+
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="special-img position-relative overflow-hidden">
+            <img src="assets/img/Asics Tiger Runner.jpg" class="w-100" alt="ASICS Tiger Runner sneaker">
+            <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+              <i class="fas fa-heart"></i>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize mt-3 mb-1">Asics Tiger Runner</p>
+            <span class="fw-bold d-block">Rp. 999.000</span>
+            <a href="products.html" class="btn btn-outline-dark mt-3">View More</a>
           </div>
         </div>
-      </div>
 
-      <!-- Recommendation -->
-      <section class ="padding-top: 10px;" id ="special">
-        <div class = "container">
-            <div class = "title text-center py-5">
-                <h2 class = "position-relative d-inline-block" style="color:goldenrod;"><strong>Best Picks</strong></h2>
-            </div>
-            <div class = "special-list row g-0" data-aos="fade-up">
-                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class = "special-img position-relative overflow-hidden">
-                        <img src ="assets/Air_Max_95-removebg-preview.png" class = "w-100">
-                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
-                            <i class = "fas fa-heart"></i>
-                        </span>
-                    </div>
-                    <div class = "text-center">
-                        <p class = "text-capitalize mt-3 mb-1">Nike Air Max 95</p>
-                        <span class = "fw-bold d-block">Rp.999.000,00</span>
-                        <a href = "product.html" class = "btn btn-outline-dark mt-3">View More</a>
-                    </div>
-                </div>
-
-                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class = "special-img position-relative overflow-hidden">
-                        <img src ="assets/Asics Tiger Runner.jpg" class = "w-100">
-                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
-                            <i class = "fas fa-heart"></i>
-                        </span>
-                    </div>
-                    <div class = "text-center">
-                        <p class = "text-capitalize mt-3 mb-1">Asics Tiger Runner</p>
-                        <span class = "fw-bold d-block">Rp.999.000,00</span>
-                        <a href = "product.html" class = "btn btn-outline-dark mt-3">View More</a>
-                    </div>
-                </div>
-
-                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class = "special-img position-relative overflow-hidden">
-                        <img src = "assets/Converse_Chuck_Taylor-removebg-preview.png" class = "w-100">
-                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
-                            <i class = "fas fa-heart"></i>
-                        </span>
-                    </div>
-                    <div class = "text-center">
-                        <p class = "text-capitalize mt-3 mb-1">Converse Chuck Taylor All-Star</p>
-                        <span class = "fw-bold d-block">Rp.999.000,00</span>
-                        <a href = "product.html" class = "btn btn-outline-dark mt-3">View More</a>
-                    </div>
-                </div>
-
-                <div class = "col-md-6 col-lg-4 col-xl-3 p-2">
-                    <div class = "special-img position-relative overflow-hidden">
-                        <img src = "assets/New_Balance_550-removebg-preview.png" class ="w-100">
-                        <span class = "position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
-                            <i class = "fas fa-heart"></i>
-                        </span>
-                    </div>
-                    <div class = "text-center">
-                        <p class = "text-capitalize mt-3 mb-1">New Balance 550</p>
-                        <span class = "fw-bold d-block">Rp.999.000,00</span>
-                        <a href = "product.html" class = "btn btn-outline-dark mt-3">View More</a>
-                    </div>
-                </div>
-            </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="special-img position-relative overflow-hidden">
+            <img src="assets/img/Converse_Chuck_Taylor-removebg-preview.png" class="w-100" alt="Converse Chuck Taylor All-Star">
+            <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+              <i class="fas fa-heart"></i>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize mt-3 mb-1">Converse Chuck Taylor All-Star</p>
+            <span class="fw-bold d-block">Rp. 999.000</span>
+            <a href="products.html" class="btn btn-outline-dark mt-3">View More</a>
+          </div>
         </div>
-    </section>
 
-    <!-- Img Carousel -->
-    <h2 class="text-center" style="margin:140px 0 25px 0px; color: goldenrod;"><strong>Our Partner</strong></h2>
-    <section>
-      <div class="row justify-content-center m-0" style="border-top: 7px solid #1c1c1c; border-bottom: 7px solid #1c1c1c;">
-        <div class="container-fluid m-0 p-0">
-          <div class="owl-carousel owl-theme">
-            <div class="item">
-              <div class="card border-0">
-                <img src="assets/Carousel nike.jpg" class="card-img-top img-fluid carousel-img" alt="carousel">
-              </div>
-            </div>
-            <div class="item">
-              <div class="card border-0">
-                <img src="assets/Carousel airjordan.png" class="card-img-top img-fluid carousel-img" alt="carousel">
-              </div>
-            </div>
-            <div class="item">
-              <div class="card border-0">
-                <img src="assets/Carousel converse.png" class="card-img-top img-fluid carousel-img" alt="carousel">
-              </div>
-            </div>
-            <div class="item">
-              <div class="card border-0">
-                <img src="assets/Carousel asics.png" class="card-img-top img-fluid carousel-img" alt="carousel">
-              </div>
-            </div>
-            <div class="item">
-              <div class="card border-0">
-                <img src="assets/Carousel new balance.png" class="card-img-top img-fluid carousel-img" alt="carousel">
-              </div>
-            </div>
-            <div class="item">
-              <div class="card border-0">
-                <img src="assets/Carousel puma.png" class="card-img-top img-fluid carousel-img" alt="carousel">
-              </div>
-            </div>
+        <div class="col-md-6 col-lg-4 col-xl-3 p-2">
+          <div class="special-img position-relative overflow-hidden">
+            <img src="assets/img/New_Balance_550-removebg-preview.png" class="w-100" alt="New Balance 550 sneaker">
+            <span class="position-absolute d-flex align-items-center justify-content-center text-primary fs-4">
+              <i class="fas fa-heart"></i>
+            </span>
+          </div>
+          <div class="text-center">
+            <p class="text-capitalize mt-3 mb-1">New Balance 550</p>
+            <span class="fw-bold d-block">Rp. 999.000</span>
+            <a href="products.html?brand=New%20Balance" class="btn btn-outline-dark mt-3">View More</a>
           </div>
         </div>
       </div>
-    </section>
-    
-      <!-- Footer -->
-      <footer id="footer">
-        <div class="footer-top">
-          <div class="container">
-            <div class="row">
-              <div class="col-lg-3 col-md-6 footer-contact">
-                <div class="align-items-center">
-                  <a href="#">
-                    <img class="logo" src="assets/Mova logo.png" alt="Logo" width="80" height="48" class="d-inline-block align-text-top" href="index.html">
-                  </a>
-                    <h3><strong>Mova</strong></h3>
-                </div>
-                <p>
-                  <strong>Phone:</strong> +62 857 1517 8836<br>
-                  <strong>Email:</strong> <a href="mailto: adanil615@gmail.com?subject=Mova Project" target="_blank" style="text-decoration: none;">adanil615@gmail.com</a><br>
-                </p>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 footer-links">
-                <h4>Useful Links</h4>
-                <ul>
-                  <li><i class="bx bx-chevron-right"></i> <a href="index.html">Home</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="about.html">About us</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Privacy Policy</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="#">Terms of service</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="product.html">Product</a></li>
-                </ul>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 footer-links">
-                <h4>Category</h4>
-                <ul>
-                  <li><i class="bx bx-chevron-right"></i> <a href="product.html">Men</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="product.html">Woman</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="product.html">Kids</a></li>
-                  <li><i class="bx bx-chevron-right"></i> <a href="product.html">Accessories</a></li>
-                </ul>
-              </div>
-    
-              <div class="col-lg-3 col-md-6 footer-links">
-                <h4>Our Social Networks</h4>
-                <p>Keep in touch with us!</p>
-                <div class="social-links mt-3">
-                  <a href="#" class="twitter"><i class="bx bxl-twitter"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-twitter" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M22 4.01c-1 .49 -1.98 .689 -3 .99c-1.121 -1.265 -2.783 -1.335 -4.38 -.737s-2.643 2.06 -2.62 3.737v1c-3.245 .083 -6.135 -1.395 -8 -4c0 0 -4.182 7.433 4 11c-1.872 1.247 -3.739 2.088 -6 2c3.308 1.803 6.913 2.423 10.034 1.517c3.58 -1.04 6.522 -3.723 7.651 -7.742a13.84 13.84 0 0 0 .497 -3.753c0 -.249 1.51 -2.772 1.818 -4.013z"></path>
-                 </svg></i></a>
-                  <a href="#" class="youtube"><i class="bx bxl-facebook"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-youtube" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M3 5m0 4a4 4 0 0 1 4 -4h10a4 4 0 0 1 4 4v6a4 4 0 0 1 -4 4h-10a4 4 0 0 1 -4 -4z"></path>
-                    <path d="M10 9l5 3l-5 3z"></path>
-                 </svg></i></a>
-                  <a href="#" class="instagram"><i class="bx bxl-instagram"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-instagram" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M4 4m0 4a4 4 0 0 1 4 -4h8a4 4 0 0 1 4 4v8a4 4 0 0 1 -4 4h-8a4 4 0 0 1 -4 -4z"></path>
-                    <path d="M12 12m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
-                    <path d="M16.5 7.5l0 .01"></path>
-                 </svg></i></a>
-                  <a href="#" class="tiktok"><i class="bx bxl-skype"><svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-tiktok" width="24" height="24" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                    <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
-                    <path d="M21 7.917v4.034a9.948 9.948 0 0 1 -5 -1.951v4.5a6.5 6.5 0 1 1 -8 -6.326v4.326a2.5 2.5 0 1 0 4 2v-11.5h4.083a6.005 6.005 0 0 0 4.917 4.917z"></path>
-                 </svg></i></a>
-                </div>
-              </div>
-    
-            </div>
-          </div>
+    </div>
+  </section>
+
+  <!-- Partner Carousel -->
+  <h2 class="text-center" style="margin: 140px 0 25px 0; color: goldenrod;"><strong>Our Partners</strong></h2>
+  <section>
+    <div class="row justify-content-center m-0" style="border-top: 7px solid #1c1c1c; border-bottom: 7px solid #1c1c1c;">
+      <div class="container-fluid m-0 p-0">
+        <div class="owl-carousel owl-theme">
+          <div class="item"><div class="card border-0"><img src="assets/img/Carousel nike.jpg" class="card-img-top img-fluid carousel-img" alt="Nike partner logo" loading="lazy"></div></div>
+          <div class="item"><div class="card border-0"><img src="assets/img/Carousel airjordan.png" class="card-img-top img-fluid carousel-img" alt="Air Jordan partner logo" loading="lazy"></div></div>
+          <div class="item"><div class="card border-0"><img src="assets/img/Carousel converse.png" class="card-img-top img-fluid carousel-img" alt="Converse partner logo" loading="lazy"></div></div>
+          <div class="item"><div class="card border-0"><img src="assets/img/Carousel asics.png" class="card-img-top img-fluid carousel-img" alt="ASICS partner logo" loading="lazy"></div></div>
+          <div class="item"><div class="card border-0"><img src="assets/img/Carousel new balance.png" class="card-img-top img-fluid carousel-img" alt="New Balance partner logo" loading="lazy"></div></div>
+          <div class="item"><div class="card border-0"><img src="assets/img/Carousel puma.png" class="card-img-top img-fluid carousel-img" alt="Puma partner logo" loading="lazy"></div></div>
         </div>
-    
-        <div class="container footer-bottom clearfix">
-          <div class="copyright">
-            &copy; Copyright <strong><span>Mova</span></strong> 2022
-          </div>
-          <div class="credits">
-            Designed by <a href="https://github.com/grawdd">Mova</a>
-          </div>
-        </div>
-      </footer>
-      
-    <!-- CDN JS Script -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+      </div>
+    </div>
+  </section>
 
-    <!-- Function Script -->
-      <script>
-        var nav = document.querySelector ('nav');
-        window.addEventListener('scroll', function(){
-          if(window.pageYOffset > 10 ){
-            nav.classList.add('bg-white', 'shadow');
-          }else{
-            nav.classList.remove('bg-white', 'shadow');
-          }
-        });
+  <div data-include="assets/partials/footer.html"></div>
 
-        AOS.init({
-        duration: 1200,
-        });
-
-        var owl = $('.owl-carousel');
-        owl.owlCarousel({
-            items: 6,
-            loop: true,
-            margin: 45,
-            autoplay: true,
-            autoplayTimeout: 1700, // Increase the timeout to 3000ms (3 seconds)
-            autoplayHoverPause: false,
-            smartSpeed: 1000, // Transition speed (1 second)
-            autoplaySpeed: 1000 // Autoplay transition speed (1 second)
-        });
-
-        $('.play').on('click', function(){
-            owl.trigger('play.owl.autoplay', [2000]) // Adjust the speed of the autoplay if needed
-        });
-
-        $('.stop').on('click', function(){
-            owl.trigger('stop.owl.autoplay');
-        });        
-      </script>
-  </body>
+  <!-- Scripts -->
+  <script src="assets/js/include.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js" integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe" crossorigin="anonymous"></script>
+  <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js" integrity="sha512-bPs7Ae6pVvhOSiIcyUClR7/q2OAsRiovw4vAkX+zJbw3ShAeeqezq50RIIcIURq7Oa20rW2n2q+fyXBNcU9lrw==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+  <script src="assets/js/cart.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
 </html>

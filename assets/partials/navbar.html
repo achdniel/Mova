@@ -1,0 +1,56 @@
+<nav class="navbar navbar-expand-lg p-md-3 sticky-top shadow-sm" style="background-color: #fff;">
+  <div class="container">
+    <a class="navbar-brand" href="index.html">
+      <img src="assets/img/Mova logo.png" alt="Mova – Sneaker Marketplace" width="80" height="48" class="d-inline-block align-text-top">
+    </a>
+    <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarMain" aria-controls="navbarMain" aria-expanded="false" aria-label="Toggle navigation">
+      <span class="navbar-toggler-icon"></span>
+    </button>
+
+    <div class="collapse navbar-collapse" id="navbarMain">
+      <ul class="navbar-nav nav-underline ms-auto mx-auto">
+        <li class="nav-item">
+          <a class="nav-link" href="index.html">Home</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="about.html">About</a>
+        </li>
+        <li class="nav-item dropdown">
+          <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Products</a>
+          <ul class="dropdown-menu">
+            <li><a class="dropdown-item" href="products.html">All Products</a></li>
+            <li><hr class="dropdown-divider"></li>
+            <li><a class="dropdown-item" href="products.html?brand=Air%20Jordan">Air Jordan</a></li>
+            <li><a class="dropdown-item" href="products.html?brand=Yeezy">Yeezy</a></li>
+            <li><a class="dropdown-item" href="products.html?brand=New%20Balance">New Balance</a></li>
+          </ul>
+        </li>
+      </ul>
+
+      <!-- Cart Button -->
+      <a class="btn position-relative me-1" href="payment.html" aria-label="View cart">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M6 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+          <path d="M17 19m-2 0a2 2 0 1 0 4 0a2 2 0 1 0 -4 0"></path>
+          <path d="M17 17h-11v-14h-2"></path>
+          <path d="M6 5l14 1l-1 7h-13"></path>
+        </svg>
+        <span id="cart-count" class="badge bg-dark">0</span>
+      </a>
+
+      <!-- Login / Sign Up Button -->
+      <a class="btn" href="login.html" aria-label="Login or register">
+        <svg xmlns="http://www.w3.org/2000/svg" width="20" height="20" viewBox="0 0 24 24" stroke-width="2" stroke="currentColor" fill="none" stroke-linecap="round" stroke-linejoin="round">
+          <path stroke="none" d="M0 0h24v24H0z" fill="none"></path>
+          <path d="M12 12m-9 0a9 9 0 1 0 18 0a9 9 0 1 0 -18 0"></path>
+          <path d="M12 10m-3 0a3 3 0 1 0 6 0a3 3 0 1 0 -6 0"></path>
+          <path d="M6.168 18.849a4 4 0 0 1 3.832 -2.849h4a4 4 0 0 1 3.834 2.855"></path>
+        </svg>
+      </a>
+
+      <!-- Dark Mode Toggle -->
+      <button id="theme-toggle" class="btn btn-outline-secondary btn-sm ms-2" aria-label="Toggle dark mode">🌙</button>
+    </div>
+  </div>
+</nav>

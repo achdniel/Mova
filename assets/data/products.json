@@ -1,0 +1,74 @@
+[
+  {
+    "id": "air-jordan-1-retro-high",
+    "brand": "Air Jordan",
+    "name": "Air Jordan 1 Retro High",
+    "price": 2500000,
+    "image": "assets/img/Air Jordan.png",
+    "description": "The Air Jordan 1 Retro High is an iconic basketball sneaker with a classic high-top silhouette, premium leather upper, and bold colorways that have defined sneaker culture for decades."
+  },
+  {
+    "id": "air-jordan-1-low",
+    "brand": "Air Jordan",
+    "name": "Air Jordan 1 Low",
+    "price": 1850000,
+    "image": "assets/img/Air Jordan.png",
+    "description": "The Air Jordan 1 Low brings iconic Jordan style in a sleek low-top profile, perfect for everyday wear with premium leather construction and Air-Sole cushioning."
+  },
+  {
+    "id": "air-jordan-3-retro",
+    "brand": "Air Jordan",
+    "name": "Air Jordan 3 Retro",
+    "price": 2750000,
+    "image": "assets/img/Air Jordan.png",
+    "description": "Featuring elephant print overlays and a visible Air unit in the heel, the Air Jordan 3 Retro is a landmark in sneaker design and a must-have for collectors."
+  },
+  {
+    "id": "yeezy-boost-350-v2",
+    "brand": "Yeezy",
+    "name": "Yeezy Boost 350 V2",
+    "price": 3200000,
+    "image": "assets/img/Yeezy.png",
+    "description": "The Yeezy Boost 350 V2 features a Primeknit upper and full-length BOOST midsole, delivering next-level comfort and Kanye West's signature minimalist aesthetic."
+  },
+  {
+    "id": "yeezy-boost-700",
+    "brand": "Yeezy",
+    "name": "Yeezy Boost 700",
+    "price": 3800000,
+    "image": "assets/img/Yeezy.png",
+    "description": "The chunky Yeezy 700 'Wave Runner' blends mesh, suede, leather and BOOST technology in one bold statement shoe that sparked the dad shoe trend."
+  },
+  {
+    "id": "yeezy-slides",
+    "brand": "Yeezy",
+    "name": "Yeezy Slides",
+    "price": 850000,
+    "image": "assets/img/Yeezy.png",
+    "description": "The Yeezy Slides feature an anatomically shaped EVA foam footbed in a one-piece design, offering supreme comfort for casual wear."
+  },
+  {
+    "id": "new-balance-550",
+    "brand": "New Balance",
+    "name": "New Balance 550",
+    "price": 1499000,
+    "image": "assets/img/New Balance.png",
+    "description": "The New Balance 550 is a retro basketball sneaker from 1989, reimagined with a clean leather upper and smooth colour-blocked panels for a timeless look."
+  },
+  {
+    "id": "new-balance-990v5",
+    "brand": "New Balance",
+    "name": "New Balance 990v5",
+    "price": 2900000,
+    "image": "assets/img/New Balance.png",
+    "description": "Made in the USA, the New Balance 990v5 is the gold standard in running heritage shoes, built with a ENCAP midsole and premium pigskin suede."
+  },
+  {
+    "id": "new-balance-2002r",
+    "brand": "New Balance",
+    "name": "New Balance 2002R",
+    "price": 2100000,
+    "image": "assets/img/New Balance.png",
+    "description": "The NB 2002R delivers a refined running silhouette with N-ergy midsole cushioning wrapped in a clean suede and mesh upper."
+  }
+]
