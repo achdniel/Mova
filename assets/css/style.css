@@ -56,6 +56,12 @@ nav.navbar {
   transition: box-shadow var(--transition), background-color var(--transition);
 }
 
+[data-include="assets/partials/navbar.html"] {
+  position: sticky;
+  top: 0;
+  z-index: 1020; /* Bootstrap sticky-top z-index */
+}
+
 [data-bs-theme="dark"] nav.navbar {
   background-color: var(--bs-body-bg) !important;
 }
