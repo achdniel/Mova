@@ -53,7 +53,15 @@ body {
 # Navbar
 --------------------------------------------------------------*/
 nav.navbar {
-  transition: box-shadow var(--transition), background var(--transition);
+  transition: box-shadow var(--transition), background-color var(--transition);
+}
+
+[data-bs-theme="dark"] nav.navbar {
+  background-color: var(--bs-body-bg) !important;
+}
+
+[data-bs-theme="dark"] .navbar-toggler-icon {
+  filter: invert(1);
 }
 
 /*--------------------------------------------------------------
@@ -105,6 +113,14 @@ nav.navbar {
 
 .special-img:hover img {
   transform: scale(1.05);
+}
+
+/* Fix for images with white backgrounds in dark mode */
+[data-bs-theme="dark"] .special-img img,
+[data-bs-theme="dark"] .carousel-img {
+  background-color: white;
+  padding: 10px;
+  border-radius: var(--radius);
 }
 
 /*--------------------------------------------------------------
@@ -169,12 +185,13 @@ nav.navbar {
 --------------------------------------------------------------*/
 #footer {
   font-size: 14px;
-  background: #1c1c1c;
+  background: #1c1c1c; /* Keep bottom area dark */
 }
 
 #footer .footer-top {
   padding: 60px 0 30px 0;
-  background: #fff;
+  background: var(--bs-body-bg); /* Adapts to light/dark */
+  border-top: 1px solid var(--bs-border-color);
 }
 
 #footer .footer-top .footer-contact {
@@ -196,7 +213,7 @@ nav.navbar {
   line-height: 24px;
   margin-bottom: 0;
   font-family: var(--font-main);
-  color: #5e5e5e;
+  color: var(--bs-body-color);
 }
 
 #footer .footer-top h4 {
@@ -235,7 +252,7 @@ nav.navbar {
 }
 
 #footer .footer-top .footer-links ul a {
-  color: #1c1c1c;
+  color: var(--bs-body-color);
   transition: 0.3s;
   display: inline-block;
   line-height: 1;
@@ -331,4 +348,24 @@ nav.navbar {
 #cart-count {
   font-size: 0.65rem;
   vertical-align: super;
+}
+
+/*--------------------------------------------------------------
+# Pagination Override
+--------------------------------------------------------------*/
+.pagination .page-link {
+  color: var(--gold);
+  border-color: var(--bs-border-color);
+}
+
+.pagination .page-link:hover {
+  background-color: var(--gold);
+  color: #fff;
+  border-color: var(--gold);
+}
+
+.pagination .page-item.active .page-link {
+  background-color: var(--gold);
+  border-color: var(--gold);
+  color: #fff;
 }
